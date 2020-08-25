@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+/* Good colors:
+pale green:rgb(242, 249, 250)
+*/
+body {
+  background-color: white;
+  font-family: Baskerville;
+}
+
+header li {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 145px;
+  height:8px;
+
+}
+header {
+  background-color: rgb(17,120,125);
+  /*border-bottom: 1px solid #466995;*/
+  position: fixed;
+  width: 100%;
+  /*z-index: 10;*/
+  opacity: 0.75;
+  margin: 0px;
+  top: 0px;
+}
+@font-face {
+  font-family: dandeleon;
+  src: url(DandeleonVintageDemo.ttf);
+}
+.welcome{
+  position: relative;
+  top: 45px;
+  font-family: dandeleon;
+  font-size: 30px;
+}
+.pins{
+  display: inline-flex;
+  /*width: 100%;*/
+  /*margin: 20px 50px;*/
+  background color: white;  
+  width: 1006px;
+  margin-left: 175px;
+  margin-top: 20px;
+}
+ .pins img{
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+
+.introduction{
+  background-color: rgb(223, 237, 236);
+  margin: 100px;
+}
+/*slideshow*/
+
+.mySlides {
+ display: none;
+ width: 500px;
+ padding-bottom: 40px;
+ margin: auto auto;
+}
+.slideshow{
+  background-position: center;
+  background-color: rgb(15, 132, 145);
+  font-family: dandeleon;
+  font-size: 30px;
+}
+
+
+
+/*Contact page*/
+.contact li{
+  font-size: 20px;
+  color: black;
+  position: relative;
+  list-style-type: none;
+  top: 100px;
+}
+
+/*Calendar page*/
+table {
+  text-align: center;
+  margin: 20px auto;
+  }
+
+td {
+  border: 2px solid #8c6b48;
+  width: 300px;
+  background-color: rgb(17,120,125);
+}
+td:hover {
+  background-color: white;
+}
+.month{
+  font-family: dandeleon;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+/*Survey page*/
+.survey{
+  text-align: center;
+  top: 500;
+}
+
+/*Burger shit*/
+form {
+  text-align: center;
+  line-height: 30px;
+  height: 80%;
+  overflow: auto;
+}
+
+form hr {
+  width: 15%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#burger {
+  max-height: 30%;
+}
+
+#overlay {
+  width: 80%;
+  margin: 3% auto;
+  height: 95vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+}
+
+
+
+.toppings label, .cheesy label {
+  margin-right: 25px;
+}
