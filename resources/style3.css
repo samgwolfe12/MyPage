@@ -52,23 +52,37 @@ body {
   font-family: dandeleon;
   font-size: 35px;
 }
+
+.bio{
+  /*margin: 50px 100px 50px 100px;*/
+  display: inline-flex;
+  margin: 50px 150px;
+}
+.bio img{
+  margin-right: 50px;
+  vertical-align: center;
+}
+.bio p{
+  margin: 0 0;
+}
+
+
 .pins{
   display: inline-flex;
   /*width: 100%;*/
-  /*margin: 20px 50px;*/
-  background color: white;  
-  width: 1006px;
-  margin-left: 175px;
-  margin-top: 20px;
+  /*margin: 20px 50px;*/ 
+ /*width: 1006px;*/
+  /*margin-left: 100px;
+  /*margin-top: 20px;*/
+  margin: 0 150px;
 }
  .pins img{
-  padding-left: 10px;
   padding-right: 10px;
  }
 
 .introduction{
   background-color: rgb(223, 237, 236);
-  margin: 100px;
+  /*margin: 0 100px;*/
 }
 /*slideshow*/
 
@@ -99,7 +113,7 @@ body {
 .europe{
   /*display: inline-flex;*/
   /*width: 100%;*/
-  /*margin: 20px 50px;*/
+  margin: 20px auto;
   background color: white;  
   width: 1006px;
   margin-left: 175px;
