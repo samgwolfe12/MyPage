@@ -102,6 +102,14 @@ body {
 
 
 /*Contact page*/
+.contact{
+  border: .75px solid black;
+  background-image: url("C:\Users\Sam Wolfe\Documents\Blog\resources\pinkcolors.jpg");
+  width: 400px;
+  height: 300px;
+  vertical-align: center;
+  margin: 200px 400px;
+}
 .contact li{
   font-size: 20px;
   color: black;
@@ -109,6 +117,7 @@ body {
   list-style-type: none;
   top: 100px;
 }
+
 /*gallery page*/
 .europe{
   /*display: inline-flex;*/
