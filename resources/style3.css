@@ -1,11 +1,10 @@
-
-/* Good colors:
-pale green:rgb(242, 249, 250)
-*/
+/*--------------------------------About Me---------------------------------------*/
 body {
   background-color: white;
   font-family: Baskerville;
 }
+
+/*Toolbar*/
 .toolbar{
   border-bottom: solid;
   border-width: .75px;
@@ -17,6 +16,7 @@ body {
   background-color: white;
   opacity: 0.75;
   display: inline-block;
+  z-index: 1;
 }
 
 .toolbar li{
@@ -28,6 +28,7 @@ body {
   padding-left: 10px;
   height: 8px;
 }
+
 .toolbar a{
   color: black;
   text-decoration: none;
@@ -37,91 +38,243 @@ body {
   padding-right:400px;
 }
 
-
-
-
-
-
+/*Blog Title*/
 @font-face {
   font-family: dandeleon;
   src: url(DandeleonVintageDemo.ttf);
 }
+
 .welcome{
   position: relative;
   top: 45px;
   font-family: dandeleon;
   font-size: 35px;
+  margin: auto auto;
+  text-align: center;
 }
 
+/*Bio and picture*/
 .bio{
-  /*margin: 50px 100px 50px 100px;*/
   display: inline-flex;
   margin: 50px 150px;
 }
+
 .bio img{
   margin-right: 50px;
   vertical-align: center;
 }
+
 .bio p{
   margin: 0 0;
 }
 
-
+/*Pins*/
 .pins{
   display: inline-flex;
-  /*width: 100%;*/
-  /*margin: 20px 50px;*/ 
- /*width: 1006px;*/
-  /*margin-left: 100px;
-  /*margin-top: 20px;*/
   margin: 0 150px;
 }
+
  .pins img{
-  padding-right: 10px;
+  margin-right: 20px;
  }
 
-.introduction{
-  background-color: rgb(223, 237, 236);
-  /*margin: 0 100px;*/
-}
-/*slideshow*/
+ .pins img:hover{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: .50;
+ }
 
+
+.makingmoves{
+  margin: 50px 150px;
+  display:inline-flex;
+}
+
+/*
+.pictues{
+  float: right;
+}*/
+
+/*TODO section*/
+* {
+  box-sizing: border-box;
+}
+
+.todo{
+  width: 700px;
+  /*margin: 100px 0 20px 150px ;*/
+  background-image: url("paper.jpg");
+  border: .75px solid black;
+  margin-right: 122px;
+}
+
+.todo ul {
+  margin: 0;
+  padding: 0;
+}
+
+.todo ul li {
+ /*font-weight: bold;*/
+  cursor: pointer;
+  position: relative;
+  padding: 8px 8px 8px 40px;
+  /*background: #eee;
+  border: .75 solid black;*/
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#move{
+  padding: 0px 8px 8px 40px;
+}
+
+.todo ul li:nth-child(odd) {
+  /*background: #f9f9f9;*/
+}
+
+/*
+.todo ul li:hover {
+  background: #ddd;
+}
+*/
+
+.todo ul li.checked {
+  /*background: #888;
+  color: #fff;*/
+  text-decoration: line-through;
+}
+
+.todo ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.todo .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+
+.todo .close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.todo .header {
+  background-image: url("flowerborder.jpg");
+  padding: 5px 10px;
+  text-align: center;
+  font-family: dandeleon;
+  font-size: 30px;
+  text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white; 
+}
+
+.todo .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.todo input {
+  margin: 0;
+  /*border: none;*/
+  border: .5px solid black;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.todo .addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  /*color: #555;*/
+  color: black;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  /*border: .5px solid black;*/
+}
+
+.todo .addBtn:hover {
+  background-color: #bbb;
+}
+
+/*Youtube videos*/
+.youtube{
+  display: inline-block;
+  margin: auto auto;
+}
+
+.vids{
+  text-decoration: underline;
+  margin:50px 40px;
+  font-style: Baskerville;
+}
+
+#v1{
+  margin-right:50px;
+  margin-left:40px;
+}
+
+/*slideshow*/
 .mySlides {
  display: none;
  width: 500px;
  padding-bottom: 40px;
  margin: auto auto;
 }
+
 .slideshow{
   background-position: center;
-  background-color: rgb(15, 132, 145);
   font-family: dandeleon;
   font-size: 30px;
 }
 
 
 
-/*Contact page*/
+/*-----------------------------------------Contact page---------------------------------------*/
 .contact{
   border: .75px solid black;
-  background-image: url("C:\Users\Sam Wolfe\Documents\Blog\resources\pinkcolors.jpg");
+  background-image: url("pinkcolors.jpg");
   width: 400px;
   height: 300px;
   vertical-align: center;
-  margin: 200px 400px;
+  position: relative;
+  top: 150px;
+  margin: auto auto;
 }
+
 .contact li{
   font-size: 20px;
   color: black;
   position: relative;
   list-style-type: none;
-  top: 100px;
+  top: 90px;
 }
 
-/*gallery page*/
+/*------------------------------------------Gallery page--------------------------------------*/
 .europe{
-  /*display: inline-flex;*/
-  /*width: 100%;*/
   margin: 20px auto;
   background color: white;  
   width: 1006px;
@@ -129,15 +282,17 @@ body {
   margin-top: 100px;
   font-family: Baskerville;
 }
+
 .e1, .e2, .e3{
   display: inline-flex;
 }
+
 .europe img{
   padding-left: 10px;
   padding-right: 10px;
  }
 
-/*Calendar page*/
+/*------------------------------------------Calendar page------------------------------------*/
 table {
   text-align: center;
   margin: 20px auto;
@@ -148,6 +303,7 @@ td {
   width: 300px;
   background-color: rgb(17,120,125);
 }
+
 td:hover {
   background-color: white;
 }
@@ -157,42 +313,9 @@ td:hover {
   margin-bottom: 10px;
 }
 
-/*Survey page*/
+/*---------------------------------------------Survey page---------------------------------------*/
 .survey{
   text-align: center;
   top: 500;
 }
 
-/*Burger shit*/
-form {
-  text-align: center;
-  line-height: 30px;
-  height: 80%;
-  overflow: auto;
-}
-
-form hr {
-  width: 15%;
-}
-
-h1 {
-  text-align: center;
-}
-
-#burger {
-  max-height: 30%;
-}
-
-#overlay {
-  width: 80%;
-  margin: 3% auto;
-  height: 95vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 40px;
-}
-
-
-
-.toppings label, .cheesy label {
-  margin-right: 25px;
-}

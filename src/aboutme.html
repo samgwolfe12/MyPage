@@ -3,7 +3,7 @@
   <head>
     <title>Sam's Blog</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\Sam Wolfe\Documents\Blog\resources\style3.css">
-    <link rel="shortcut icon" href="C:\Users\Sam Wolfe\Documents\Blog\resources\favicon.ico"
+    <link rel="shortcut icon" href="C:\Users\Sam Wolfe\Documents\Blog\resources\favicon.ico">
 
   </head>
   <body>
@@ -26,7 +26,7 @@
 
     <!-- Welcome Section -->
     <div class="welcome">
-      <h1>Sam Wolfe</h1>
+      <h1>Code Goddess</h1>
     </div>
 
     <div class="bio">
@@ -48,6 +48,7 @@
     </div>
 
 
+
     <!-- Picture Section -->
     <div class="pins">
       <img src="C:\Users\Sam Wolfe\Documents\Blog\resources\flowers.jpg" width="225" height="300">
@@ -58,22 +59,40 @@
     </div>
 
     <!-- Intro Section -->
-    <div class="introduction">
-      <h2>To-Do</h2>
-        <p>Here's my list of thing to learn and do!</p>
-        <ul>
-          <li>X Fix toolbar</li>
-          <li>X New front page layout</li>
-          <li>  Add a better todo system</li>
-          <li>  Organize layered stylesheets</li>
-          <li>  Javascript page</li>
-          <li>  Moving pictures</li>
-          <li>  New slideshow</li>
-          <li>  Incorporate framework</li>
-          <li>  Use java servlet to post pinterest gallery</li>
-          <li>  Search function</li>
-          <li>  Survey using java servlet or php?</li>
-        </ul>
+    <div class="makingmoves">
+      <div class="todo">
+        <script src="./todo.js"></script>
+        <div id="myDIV" class="header">
+          <h2>Things to do</h2>
+          <input type="text" id="myInput" placeholder="new item...">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+          <ul id="myUL">
+            <li class="checked">Fix toolbar</li>
+            <li>New front page layout</li>
+            <li class="checked">Add a better todo system</li>
+            <li>Save ToDo data</li>
+            <li id="move">Organize layered stylesheets</li>
+            <li>Javascript page</li>
+            <li id="move">Moving pictures</li>
+            <li id="move">New slideshow</li>
+            <li>Incorporate framework</li>
+            <li>Use java servlet to post pinterest gallery</li>
+            <li>Search function</li>
+            <li id="move">Survey using java servlet or php?</li>
+          </ul>
+        </div>
+        <div class="pictures">
+          <img src="C:\Users\Sam Wolfe\Documents\Blog\resources\bf1.jpg" width="300" height="300">
+          <img src="C:\Users\Sam Wolfe\Documents\Blog\resources\bf1.jpg" width="300" height="300">
+        </div>
+      </div>
+    
+
+    <h2 class="vids">Feature Films</h2>
+    <div class ="youtube">
+      <iframe id="v1" width="560" height="315" src="https://www.youtube.com/embed/LItz8T7utFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nGo_CmEIxgs?start=161" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- Slideshow Section -->
